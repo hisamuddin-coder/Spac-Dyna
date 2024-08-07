@@ -20,45 +20,49 @@
   <body>
     <header>
       <!---------|| NAVBAR ||----------->
-      <nav id="nav">
-        <!--logo-->
-        <a href="index.html" class="logo">
-          <span class="text-blue">Spac</span>
-          <span class="text-red">Dyna</span>
-        </a>
-        <!--nav-links-->
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li>
-              <a href="/" class="nav-link">Home</a>
-            </li>
-            <li>
-              <a href="#about" class="nav-link">About Us</a>
-            </li>
-            <li>
-              <a href="#services" class="nav-link">Services</a>
-            </li>
-            <li>
-              <a href="#portfolio" class="nav-link">Portfolio</a>
-            </li>
-            <li>
-              <a href="#blog" class="nav-link">Blog</a>
-            </li>
-            <li>
-              <a href="#contact" class="nav-link">Contacts</a>
-            </li>
-          </ul>
+      <section class="navbar">
+        <div class="container">
+          <nav id="nav" class="flex">
+            <!--logo-->
+            <a href="index.html" class="logo">
+              <span class="text-blue">Spac</span>
+              <span class="text-red">Dyna</span>
+            </a>
+            <!--nav-links-->
+            <div class="nav-links-container">
+              <ul class="nav-links flex">
+                <li>
+                  <a href="/" class="nav-link active">Home</a>
+                </li>
+                <li>
+                  <a href="#about" class="nav-link">About Us</a>
+                </li>
+                <li>
+                  <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li>
+                  <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li>
+                  <a href="#blog" class="nav-link">Blog</a>
+                </li>
+                <li>
+                  <a href="#contact" class="nav-link">Contacts</a>
+                </li>
+              </ul>
+            </div>
+            <!--nav-toggle-->
+            <button class="nav-toggle">
+              <span></span>
+            </button>
+          </nav>
         </div>
-        <!--nav-toggle-->
-        <button class="nav-toggle">
-          <span></span>
-        </button>
-      </nav>
+      </section>
 
       <!---------|| HERO ||----------->
-      <section id="hero">
+      <section id="hero" class="hero flex">
         <div class="container">
-          <div class="wrapper">
+          <div class="hero-wrapper flex">
             <article class="hero-content">
               <h6>Welcome to Spac Dynamic</h6>
               <h1 class="title">
@@ -72,6 +76,15 @@
               </p>
               <a href="#" class="btn">Learn more</a>
             </article>
+            <div class="hero-showcase">
+              <div class="blob">
+                <img
+                  src="https://media.istockphoto.com/id/2150111582/photo/digital-marketing-media-in-virtual-icon-globe-shape-business-open-his-hand-working-touch.jpg?b=1&s=612x612&w=0&k=20&c=lfchKBq392dqa4N7ixxBOIBPY658kPW1DYjj6RaNsHQ="
+                  alt="hero showcase"
+                  class="img"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>

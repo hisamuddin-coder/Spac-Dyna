@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 *,
 *::before,
 *::after {
@@ -7,8 +8,35 @@
 }
 
 $white-clr: #fff;
+$off-white-clr: #f2f2f2;
 $black-clr: #212529;
 $gray-clr: #777;
 $primary-clr: #fe3f40;
 $primary-clr-2: #0d6efd;
 $secondary-clr: #fd7e14;
+
+// Fonts
+$ff-primary: " Roboto ", sans-serif;
+$ff-secondary: "Ubuntu", sans-serif;
+$fw-light: 400;
+$fw-normal: 500;
+$fw-neduyn: 600;
+$fw-bold: 700;
+$fw-bolder: 900;
+
+// letter spacing
+$ls-normal: 1px;
+$ls-md: 1.5px;
+
+// line height
+$lh-sm: 1;
+$lh-md: 1.25;
+$lh-lg: 1.5;
+
+// border-radius
+$border-radius-sm: 2em;
+$border-radius-lg: 50%;
+
+// transition
+$transition-normal: all 400ms ease;
+$transition-lazy: all 1500ms ease;

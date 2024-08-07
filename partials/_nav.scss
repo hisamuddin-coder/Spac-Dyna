@@ -1,0 +1,111 @@
+header {
+  position: relative;
+  .navbar {
+    position: absolute;
+    width: 100%;
+    nav {
+      justify-content: space-between;
+      padding: 1.5rem 0;
+      .logo {
+        color: $primary-clr;
+        font-size: 1.75rem;
+        font-weight: $fw-bold;
+        text-transform: uppercase;
+        .text-blue {
+          color: $primary-clr-2;
+        }
+      }
+      .nav-links {
+        gap: 2rem;
+
+        .nav-link {
+          color: $black-clr;
+          font-weight: $fw-normal;
+          letter-spacing: $ls-normal;
+          &:hover {
+            color: $primary-clr;
+          }
+        }
+        .nav-link.active {
+          color: $primary-clr;
+        }
+      }
+      .nav-toggle {
+        display: none;
+        cursor: pointer;
+        width: 32px;
+        height: 32px;
+        span,
+        span::before,
+        span::after {
+          display: block;
+          position: relative;
+          background-color: $black-clr;
+          width: 28px;
+          height: 2px;
+          border-radius: 5px;
+        }
+        span::before,
+        span::after {
+          position: absolute;
+          content: "";
+          transform-origin: center;
+          transition: $transition-normal;
+        }
+        span::before {
+          top: -9px;
+        }
+        span::after {
+          top: 9px;
+        }
+      }
+      .nav-toggle.close span {
+        visibility: hidden;
+      }
+      .nav-toggle.close span::before,
+      .nav-toggle.close span::after {
+        visibility: visible;
+        transform: translateY(9px) rotate(45deg);
+      }
+      .nav-toggle.close span::after {
+        transform: translateY(-9px) rotate(-45deg);
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  header {
+    .navbar {
+      nav {
+        .nav-links-container {
+          position: absolute;
+          background-color: $white-clr;
+          width: 100%;
+          top: 100%;
+          left: 0;
+          transform-origin: top;
+          height: 0;
+          overflow: hidden;
+          z-index: 9;
+          transition: $transition-normal;
+          .nav-links {
+            all: unset;
+            list-style-type: none;
+            a {
+              display: block;
+              padding: 1rem 0;
+              text-align: center;
+              border-top: 1px solid rgba($color: $gray-clr, $alpha: 0.2);
+            }
+            li:last-child {
+              border-bottom: 1px solid rgba($color: $gray-clr, $alpha: 0.2);
+            }
+          }
+        }
+        .nav-toggle {
+          display: block;
+        }
+      }
+    }
+  }
+}

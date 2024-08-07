@@ -1,0 +1,55 @@
+body {
+  color: $black-clr;
+  background-color: $white-clr;
+  font-family: $ff-primary;
+  font-weight: $fw-light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+input,
+textarea,
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: $gray-clr;
+  font-size: 0.875rem;
+}
+
+//=========== Global Style ============//
+.container {
+  width: 90%;
+  max-width: 75rem;
+  margin: auto;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-pd {
+  padding: 6.25rem 0;
+}
+.section-bg {
+  background-color: $off-white-clr;
+}
