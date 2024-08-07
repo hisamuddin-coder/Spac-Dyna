@@ -53,3 +53,7 @@ p {
 .section-bg {
   background-color: $off-white-clr;
 }
+.items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}

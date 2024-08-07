@@ -1,0 +1,16 @@
+#services {
+  .flex {
+    gap: 2.5rem;
+    .service-showcase {
+      flex: 1;
+    }
+    .service-content {
+      flex: 1;
+      .service-desc {
+        h2 {
+          color: $black-clr;
+        }
+      }
+    }
+  }
+}
