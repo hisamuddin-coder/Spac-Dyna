@@ -1,0 +1,14 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+$white-clr: #fff;
+$black-clr: #212529;
+$gray-clr: #777;
+$primary-clr: #fe3f40;
+$primary-clr-2: #0d6efd;
+$secondary-clr: #fd7e14;
