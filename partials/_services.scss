@@ -7,10 +7,35 @@
     .service-content {
       flex: 1;
       .service-desc {
-        h2 {
-          color: $black-clr;
+        p {
+          line-height: $lh-lg;
+          margin-bottom: 2rem;
+        }
+      }
+      .stat {
+        margin-bottom: 1.5rem;
+
+        .progress-bar {
+          position: relative;
+          width: 100%;
+          height: 0.5rem;
+          background-color: $off-white-clr;
+          border-radius: $border-radius-sm;
+          overflow: hidden;
+          .progress-bar-fill {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: $primary-clr-2;
+          }
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #services .flex {
+    flex-direction: column;
   }
 }

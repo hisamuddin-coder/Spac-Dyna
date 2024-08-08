@@ -35,7 +35,34 @@ p {
   color: $gray-clr;
   font-size: 0.875rem;
 }
-
+h2 {
+  color: $black-clr;
+  font-size: 2rem;
+  font-weight: $fw-bolder;
+  font-family: $ff-secondary;
+  text-transform: capitalize;
+  line-height: $lh-md;
+  margin-bottom: 1rem;
+  .text-blue {
+    color: $primary-clr-2;
+  }
+  .text-red {
+    color: $primary-clr;
+  }
+}
+h3 {
+  color: $white-clr;
+  font-size: 1.5rem;
+  font-weight: $fw-bold;
+  margin-bottom: 0.5rem;
+}
+h4 {
+  color: $black-clr;
+  font-size: 1.25rem;
+  font-weight: $fw-bold;
+  font-family: $ff-secondary;
+  margin-bottom: 1rem;
+}
 //=========== Global Style ============//
 .container {
   width: 90%;
@@ -56,4 +83,5 @@ p {
 .items {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
 }
